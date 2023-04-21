@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ur5_with_robotiq_gripper_des
+    relative_path: urdf/ur5_with_robotiq_gripper.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/ur5_with_vacc_gripper.srdf
+  CONFIG:
+    author_name: Jeon Ho Kang
+    author_email: jeonhoka@usc.edu
+    generated_timestamp: 1668202851

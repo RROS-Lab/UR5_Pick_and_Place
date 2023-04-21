@@ -1,0 +1,34 @@
+<launch>
+  <arg name="sim" default="false" />
+  <arg name="debug" default="false" />
+  <arg unless="$(arg debug)" name="launch_prefix" value="" />
+  <arg     if="$(arg debug)" name="launch_prefix" value="gdb --ex run --args" />
+
+  <arg name="rviz_config" default="" />
+  <arg     if="$(eval rviz_config=='')" name="command_args" value="" />
+  <arg unless="$(eval rviz_config=='')" name="command_args" value="-d $(arg rviz_config)" />
+  
+  <!-- Remap follow_joint_trajectory -->
+  
+  <remap if="$(arg sim)" from="/scaled_pos_joint_traj_controller/follow_joint_trajectory" to="/pos_joint_traj_controller/follow_joint_trajectory"/>
+
+<!-- launch robot description -->
+  <include file="$(find ur5_with_robotiq_gripper_des)/launch/description.launch"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" /> 
+  
+  <!-- Launch moveit -->
+  <include file="$(find ur5_with_robotiq_moveit_config)/launch/move_group.launch">
+    <arg name="debug" default="$(arg debug)" />
+  </include>
+  
+  <!-- launch camera node -->
+   <!-- <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+  <arg name="filters" value="pointcloud"/>
+  </include>-->
+
+  <node name="$(anon rviz)" launch-prefix="$(arg launch_prefix)" pkg="rviz" type="rviz" respawn="false"
+        args="$(arg command_args)" output="screen">
+  </node>
+  
+  
+</launch>
