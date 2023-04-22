@@ -1,7 +1,7 @@
 # Pick and Plae Pipeline using  UR5 with Robotiq gripper and Realsense Camera
 
 
-Dependencies
+Dependencies\
 [Universal Robot Driver](https://github.com/UniversalRobots/Universal_Robots_ROS_Driver)\
 [UR5 Utilities](https://github.com/nLinkAS/fmauch_universal_robot)\
 ^^ packages may have dependency conflict. Check CmakeList.\
