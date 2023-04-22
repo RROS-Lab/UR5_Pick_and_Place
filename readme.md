@@ -11,7 +11,7 @@ Dependencies
 [simple_grasping](https://github.com/mikeferguson/simple_grasping): vision package for segmenting and pose estimation of objects\
 [Robotiq Gripper ROS Utilities](https://github.com/ros-industrial/robotiq) for Gripper driver\
 [Custom vaccuum interface with arduino with Robotiq](https://github.com/RROS-Lab/Hybrid-Granular-Jammer-Gripper-Driver) for arduino interface and vaccuum\ activation with joint state feedback\
-[URDF of robotic system with gripper and realsense](https://github.com/RROS-Lab/UR5_with_Robotiq_Gripper_and_Realsense): for digital twin\
+[URDF of robotic system with gripper and realsense](https://github.com/RROS-Lab/UR5_with_Robotiq_Gripper_and_Realsense): for digital twin
 
 
 1. Launch UR5 driver.
