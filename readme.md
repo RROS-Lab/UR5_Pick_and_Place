@@ -1,5 +1,19 @@
 # Pick and Plae Pipeline using  UR5 with Robotiq gripper and Realsense Camera
 
+
+Dependencies
+[Universal Robot Driver](https://github.com/UniversalRobots/Universal_Robots_ROS_Driver)
+[UR5 Utilities](https://github.com/nLinkAS/fmauch_universal_robot)
+^^ packages may have dependency conflict. Check CmakeList.
+[Moveit!](https://github.com/ros-planning/moveit)
+[Pilz Industrial Motion Planner](https://github.com/PilzDE/pilz_industrial_motion) for motion planning any alternatives will work
+[Realsense-ROS](https://github.com/IntelRealSense/realsense-ros)
+[simple_grasping](https://github.com/mikeferguson/simple_grasping): vision package for segmenting and pose estimation of objects
+[Robotiq Gripper ROS Utilities](https://github.com/ros-industrial/robotiq) for Gripper driver
+[Custom vaccuum interface with arduino with Robotiq](https://github.com/RROS-Lab/Hybrid-Granular-Jammer-Gripper-Driver) for arduino interface and vaccuum activation with joint state feedback
+[URDF of robotic system with gripper and realsense](https://github.com/RROS-Lab/UR5_with_Robotiq_Gripper_and_Realsense): for digital twin
+
+
 1. Launch UR5 driver.
 In ur_common.launch, modify by deleting 
 
@@ -40,6 +54,7 @@ b) Add - Motion planning
     roslaunch realsense2_camera rs_camera.launch filters:=pointcloud
 
 5. Launch perception node for manipulation
+
     roslaunch simple_grasping basic_perception_dbg.launch 
 
 6. Run python file
