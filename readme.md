@@ -2,16 +2,16 @@
 
 
 Dependencies
-[Universal Robot Driver](https://github.com/UniversalRobots/Universal_Robots_ROS_Driver)
-[UR5 Utilities](https://github.com/nLinkAS/fmauch_universal_robot)
-^^ packages may have dependency conflict. Check CmakeList.
-[Moveit!](https://github.com/ros-planning/moveit)
-[Pilz Industrial Motion Planner](https://github.com/PilzDE/pilz_industrial_motion) for motion planning any alternatives will work
-[Realsense-ROS](https://github.com/IntelRealSense/realsense-ros)
-[simple_grasping](https://github.com/mikeferguson/simple_grasping): vision package for segmenting and pose estimation of objects
-[Robotiq Gripper ROS Utilities](https://github.com/ros-industrial/robotiq) for Gripper driver
-[Custom vaccuum interface with arduino with Robotiq](https://github.com/RROS-Lab/Hybrid-Granular-Jammer-Gripper-Driver) for arduino interface and vaccuum activation with joint state feedback
-[URDF of robotic system with gripper and realsense](https://github.com/RROS-Lab/UR5_with_Robotiq_Gripper_and_Realsense): for digital twin
+[Universal Robot Driver](https://github.com/UniversalRobots/Universal_Robots_ROS_Driver)\
+[UR5 Utilities](https://github.com/nLinkAS/fmauch_universal_robot)\
+^^ packages may have dependency conflict. Check CmakeList.\
+[Moveit!](https://github.com/ros-planning/moveit)\
+[Pilz Industrial Motion Planner](https://github.com/PilzDE/pilz_industrial_motion) for motion planning any alternatives will work\
+[Realsense-ROS](https://github.com/IntelRealSense/realsense-ros)\
+[simple_grasping](https://github.com/mikeferguson/simple_grasping): vision package for segmenting and pose estimation of objects\
+[Robotiq Gripper ROS Utilities](https://github.com/ros-industrial/robotiq) for Gripper driver\
+[Custom vaccuum interface with arduino with Robotiq](https://github.com/RROS-Lab/Hybrid-Granular-Jammer-Gripper-Driver) for arduino interface and vaccuum\ activation with joint state feedback\
+[URDF of robotic system with gripper and realsense](https://github.com/RROS-Lab/UR5_with_Robotiq_Gripper_and_Realsense): for digital twin\
 
 
 1. Launch UR5 driver.
